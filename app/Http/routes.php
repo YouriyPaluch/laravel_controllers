@@ -22,3 +22,5 @@ Route::get('/home', 'HomeController@index');
 Route::resource('tasks', 'TaskController',[
     'except'=>['create', 'show'],
 ]);
+
+//Route::group(['prefix'=>'tasks', middleware])
